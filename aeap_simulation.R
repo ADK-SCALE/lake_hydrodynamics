@@ -19,7 +19,8 @@ era5 <- arrow::read_parquet("era5_adk_1980-2022.parquet") %>%
 
 tdo <- adk_data("tempdo")
 
-meta2 <- read.csv("C:/Users/borre/Desktop/JP/adk.csv")
+## updated `meta` table with length and width info
+meta2 <- read.csv("adk.csv")
 meta2 <- meta2[meta2$max.depth > 5,]
 
 
